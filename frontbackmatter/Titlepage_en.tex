@@ -2,10 +2,10 @@
 % Titlepage
 %*******************************************************
 %%%
-%%% title page (english)
+%%% title page (german)
 %%%
 \thispagestyle{empty}
-\pdfbookmark[0]{Titlepage}{title}
+\pdfbookmark[0]{Titelblatt}{title}
 \begin{titlepage}
 
   % If printed on two sides, center the title page
@@ -18,15 +18,19 @@
 
   \begin{center}
     \vspace{0.1cm}
-    \huge \textbf{Darmstadt University of Applied Sciences}\\
+    \huge \textbf{Internship Report}\\
     \vspace{0.4cm}
-    \LARGE -- Faculty of Computer Science --
+    \large \myFaculty\\\myUni
+
+    
   \end{center}
 
   \vfill
   \vfill
 
   \begin{center}
+    \Large with the topic\\
+    \vspace{0.1cm}
     \LARGE \textbf{\myTitle}
   \end{center} 
 
@@ -34,19 +38,19 @@
   \vfill
 
   \begin{center}
-    \Large Submitted in partial fulfilment of the requirements for the degree of\\
-    \vspace{0.3cm}
-    \Large \myDegree
+    \Large at\\
+    \vspace{0.1cm}
+    \Large {Local Brand X GmbH\\Mombacher Straße 4\\55122 Mainz}
   \end{center}
 
   \vfill
 
   \begin{center}
-    \Large by\\
-    \vspace{0.3cm}
+    \Large written by\\
+    \vspace{0.25cm}
     \Large \textbf{\myName}\\
-    \vspace{0.3cm}
-    \normalsize Matriculation number: \myId
+    \vspace{0.25cm}
+    \normalsize Matriculation Number: \myId
   \end{center}
 
   \vfill
@@ -54,8 +58,9 @@
 
   \begin{center}
     \begin{tabular}{lll}
-      First Examiner   & : & \myProf \\
-      Second Examiner & : & \myOtherProf
+      Referent    & : & \myProf \\
+      Korreferent & : & \myOtherProf\\
+      Supervisor  & : & \mySupervisor
     \end{tabular}
   \end{center} 
 

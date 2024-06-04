@@ -35,7 +35,7 @@
 \documentclass[ openright,titlepage,numbers=noenddot,headinclude,%twoside, %1headlines,% letterpaper a4paper
                 footinclude=true,cleardoublepage=empty,abstractoff, % <--- obsolete, remove (todo)
                 BCOR=5mm,paper=a4,fontsize=11pt,%11pt,a4paper,%
-                ngerman,american,%lockflag%
+                ngerman,american,%
                 ]{scrreprt}
 
 %*************************************************************************
@@ -60,7 +60,7 @@
 \begin{document}
 \frenchspacing
 \raggedbottom
-\selectlanguage{ngerman} % ngerman, american
+\selectlanguage{american} % ngerman, american
 %\renewcommand*{\bibname}{new name}
 %\setbibpreamble{}
 \pagenumbering{roman}
@@ -68,21 +68,20 @@
 %*************************************************************************
 % Frontmatter
 %*************************************************************************
-\include{frontbackmatter/Titlepage}
-\include{frontbackmatter/Titleback}
+\include{frontbackmatter/Titlepage_en}
+%\include{frontbackmatter/Titleback}
 %\cleardoublepage\include{frontbackmatter/Dedication}
 %\cleardoublepage\include{frontbackmatter/Foreword}
-\cleardoublepage\include{frontbackmatter/Declaration}
-\condLOCK{\cleardoublepage\include{frontbackmatter/BlockingNotice}}
-\cleardoublepage\include{frontbackmatter/AbstractEN}
-\cleardoublepage\include{frontbackmatter/AbstractDE}
+\cleardoublepage\include{frontbackmatter/Acknowledgments}
+% \cleardoublepage\include{frontbackmatter/Declaration}
+% \cleardoublepage\include{frontbackmatter/AbstractEN}
+% \cleardoublepage\include{frontbackmatter/AbstractDE}
 %\cleardoublepage\include{frontbackmatter/Publications}
-%\cleardoublepage\include{frontbackmatter/Acknowledgments}
 \cleardoublepage\include{frontbackmatter/Contents}
-\cleardoublepage\include{frontbackmatter/Figures}
-\cleardoublepage\include{frontbackmatter/Tables}
-\cleardoublepage\include{frontbackmatter/Listings}
-\cleardoublepage\include{frontbackmatter/Acronyms}
+% \cleardoublepage\include{frontbackmatter/Figures}
+% \cleardoublepage\include{frontbackmatter/Tables}
+% \cleardoublepage\include{frontbackmatter/Listings}
+% \cleardoublepage\include{frontbackmatter/Acronyms}
 %*************************************************************************
 % Mainmatter
 %*************************************************************************
@@ -90,25 +89,20 @@
 \pagestyle{scrheadings}
 \pagenumbering{arabic}
 % Alwas use \cleardoublepage before \part{...}.
-\cleardoublepage
-\part{Thesis}\label{pt:thesis}
-\include{chapters/examples/chapter01}
-\include{chapters/examples/chapter02}
-\include{chapters/examples/chapter03}
-%*************************************************************************
-% Recommendations
-%*************************************************************************
-%\part{Empfehlungen zur Erstellung wissenschaftlicher Abschlussarbeiten}
-%\label{pt:recommendations}
+% \cleardoublepage
+% \part{Thesis}\label{pt:thesis}
+\include{chapters/introduction/introduction}
+\include{chapters/project/project}
+% \include{chapters/examples/chapter03}
 %*************************************************************************
 % Backmatter
 %*************************************************************************
-\appendix
+% \appendix
 %\renewcommand{\thechapter}{\alph{chapter}}
-\cleardoublepage
-\part{Appendix}
-\include{chapters/examples/appendix01}
-\include{chapters/examples/appendix02}
+% \cleardoublepage
+% \part{Appendix}
+% \include{chapters/examples/appendix01}
+% \include{chapters/examples/appendix02}
 %*************************************************************************
 % Other Stuff in the Back
 %*************************************************************************

@@ -13,13 +13,15 @@ The Local Marketing Platform facilitates the planning, creation, and implementat
 %
 \section{Problem Statement}
 \label{sec:intro:motivation}
-In today's digital era, users engage with an extensive array of web applications and services to accomplish various tasks. This interaction often requires navigating through multiple platforms, each with its own unique interface and login requirements, resulting in fragmented workflows and decreased productivity. The need to switch between different tabs and applications not only consumes time but also increases cognitive load, ultimately impacting user efficiency and experience.
+In today's digital era, users engage with an extensive array of web applications and services to accomplish various tasks. This interaction often requires navigating through multiple platforms, each with its own unique interface and login requirements, resulting in fragmented workflows and decreased productivity. The need to intergrate data between different websites or services could be a very challenging task for the user, and time consuming.
 
-Integrating data from one service to another service could be a severe challange, and time consuming, hence a manual input of the data could lead to a potential error. Creating a website than can handle the integration will just create another additional problem to the user, since the user will have to switch between the website and manually input the data to the service.
+For example, the Customer Success Department at Local Branx X frequently recieve requests or bug support task from the customer, which they have to manually input into the project management tool, ClickUp. On some specific errors, customers will provied some useful information like time of accident or what kind of execeptions are being thrown. With this information the Customer Success Manager have to look the exact errror in Sentry Issues Tracker, the information from this entry in Sentry would be then forwarded to the head of development team. On some cases head of development team will create additional Dev-Ticket in ClickUp with the information from the Sentry manually, which a very task consuming task.
 
-% This is where the part, where the browser extension comes to play.
-% TODO: FINISH THIS
-While numerous browser extensions are available, they typically address specific functionalities in isolation, such as bookmarking, password management, or content filtering. There is a notable absence of a unified tool that integrates these essential functions into a single, coherent interface. This lack of integration presents significant challenges in managing multiple online activities, leading to inefficiencies and complexities that hinder user productivity. Apart from that integrating the data from one service to another service can be a severe challenges
+Creating a website than can handle the integration will just create another additional problem to the user, since the user will have to switch between the website and manually input the data to the service. A proper solution would a service that can be integrated to the browser, so that the user can easily transfer the data from one service to another service in order to save time and increase productivity. For this particular reason, a browser extension could be a good solution for this problem, since it can be easily integrated to the browser and can be used to transfer the data from one service to another service.
+
+While numerous browser extensions are available, they typically address specific functionalities in isolation, such as bookmarking, password management, or content filtering. There is a notable absence of a unified tool that integrates these essential functions into a single, coherent interface. 
+
+This lack of integration presents significant challenges in managing multiple online activities, leading to inefficiencies and complexities that hinder user productivity. Apart from that integrating the data from one service to another service can be a severe challenges
 
 %
 % Section: Ziele
@@ -36,8 +38,9 @@ The browser extension will incorporate several key functionalities:
     \item \textbf{Bookmark Management:}
     The web browser extension will include a robust bookmark management feature that allows users to easily save, organize, and access specific marketing platform web pages. This functionality will help the Customer Success Department quickly access relevant information and resources, enhancing their efficiency and productivity. It ensures that all users who install the extension have access to the same bookmarks without interfering with their existing browser bookmarks. This eliminates the need for employees to sign in with the same Google account (as Google Chrome is the preferred browser at Local Brand X) to access shared bookmarks.
 
-    \item \textbf{Synchronization from ClickUp to MOCO:}
-    The integration of ClickUp with MOCO will enable seamless synchronization of tasks between the project management tool and the ERP system. Tasks created or updated in ClickUp will automatically reflect in MOCO, ensuring that project-related activities are aligned with business processes. This synchronization will minimize the need for manual data entry, reduce errors, and ensure that all team members have access to the latest information, enhancing overall project coordination and efficiency. MOCO will manage accounting, payment invoices for customers, employee salaries, and paychecks directly, as it integrates with other tools like DATEV and ClickUp.
+    % TODO: ÜBerlegen mau masukin ini atau engga
+    % \item \textbf{Synchronization from ClickUp to MOCO:}
+    % The integration of ClickUp with MOCO will enable seamless synchronization of tasks between the project management tool and the ERP system. Tasks created or updated in ClickUp will automatically reflect in MOCO, ensuring that project-related activities are aligned with business processes. This synchronization will minimize the need for manual data entry, reduce errors, and ensure that all team members have access to the latest information, enhancing overall project coordination and efficiency. MOCO will manage accounting, payment invoices for customers, employee salaries, and paychecks directly, as it integrates with other tools like DATEV and ClickUp.
 
     \item \textbf{Integration of Sentry's Issues Transfer to ClickUp:}
     This feature will facilitate the automatic transfer of issues and error reports from Sentry, a monitoring tool, to ClickUp. When Sentry detects an issue, it will automatically log it as a task in ClickUp, where it can be tracked and managed by the development team. This integration will streamline the error management process, ensure timely resolution of issues, and improve the overall quality and reliability of the software products. It will help the development team quickly identify and resolve issues, reducing downtime and enhancing the user experience, as Sentry provides detailed information about errors, aiding in the rapid identification of root causes.
@@ -46,8 +49,17 @@ The browser extension will incorporate several key functionalities:
 \subsection{Non-Functional Criteria}
 The development of the web browser extension will also focus on several non-functional criteria to ensure its effectiveness and usability:
 
+\subsubsection{Corporate Design Compliant and User-Friendly}
+\label{subsec:nf-criteria:design}
+The proposed extension will incorporate an intuitive and easy-to-navigate interface, meticulously designed to ensure that users can access and utilize its functionalities with minimal effort. This design strategy prioritizes simplicity and efficiency, ultimately enhancing the overall user experience.
+
+From a user-centered design perspective, the interface will be structured to minimize cognitive load, thereby facilitating a seamless interaction flow. The visual and interactive elements will be harmonized with the corporate design guidelines, ensuring brand consistency and recognition. This adherence to corporate design principles will not only maintain aesthetic coherence but also reinforce user trust and satisfaction.
+
+Furthermore, the extension will employ a minimalist design approach, reducing unnecessary elements and focusing on core functionalities. This approach aims to streamline user tasks and reduce the time required to perform specific actions. By aligning the interface design with established usability heuristics, the extension will support error prevention, efficient navigation, and clear feedback mechanisms.
+
+
 \begin{itemize}
-    \item \textbf{User-Friendly Design:}
+    \item[Corporate Design Compliant and User-Friendly]
     The extension will feature an intuitive and easy-to-navigate interface that allows users to access and utilize its functionalities with minimal effort. The design will prioritize simplicity and efficiency, enhancing the overall user experience.
 
     \item \textbf{Robust Security Features:}
